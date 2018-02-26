@@ -36,6 +36,16 @@ public class IntArrayWorker
     return max;
   }
 
+  public int getColTotal(int col) {
+    int total = 0;
+
+    for (int i=0; i<matrix.length; i++) {
+      total += matrix[i][col];
+    }
+
+    return total;
+  }
+
   /**
    * Method to return the total 
    * @return the total of the values in the array
