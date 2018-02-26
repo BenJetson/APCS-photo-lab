@@ -23,6 +23,19 @@ public class IntArrayWorker
     return counter;
   }
 
+  public int getLargest() {
+    int max = matrix[0][0];
+
+    for (int i=0; i<matrix.length; i++) {
+      for (int j=0; j<matrix[0].length; j++) {
+        int current = matrix[i][j];
+        if (Math.max(current, max) == current) max = current;
+      }
+    }
+
+    return max;
+  }
+
   /**
    * Method to return the total 
    * @return the total of the values in the array
