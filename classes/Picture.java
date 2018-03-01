@@ -176,7 +176,7 @@ public class Picture extends SimplePicture
 
   /** Method that mirrors the picture around a 
     * hoizontal mirror in the center of the picture
-    * from left to right */
+    * from top to bottom */
   public void mirrorHorizontal()
   {
     Pixel[][] pixels = this.getPixels2D();
