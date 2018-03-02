@@ -8,6 +8,15 @@
  */
 public class PictureTester
 {
+  /** Method to test mirrorDiagonal */
+  public static void testMirrorDiagonal()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.mirrorDiagonal();
+    beach.explore();
+  }
+
   /** Method to test zeroBlue */
   public static void testZeroBlue()
   {
@@ -123,11 +132,11 @@ public class PictureTester
     //testFixUnderwater();
     // testMirrorVertical();
     // testMirrorHorizontal();
-    testMirrorHorizontalInv();
+    // testMirrorHorizontalInv();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
-    //testMirrorDiagonal();
+    testMirrorDiagonal();
     //testCollage();
     //testCopy();
     //testEdgeDetection();
