@@ -153,11 +153,11 @@ public class PictureTester
     // testMirrorHorizontalInv();
     //testMirrorTemple();
     // testMirrorArms();
-    testMirrorGull();
+    // testMirrorGull();
     // testMirrorDiagonal();
     //testCollage();
     //testCopy();
-    //testEdgeDetection();
+    testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
