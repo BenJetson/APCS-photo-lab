@@ -263,6 +263,31 @@ public class Picture extends SimplePicture
     }
   }
   
+  /** Mirror just part of a picture of a gull */
+  public void mirrorGull()
+  {
+    int mirrorPoint = 344;
+    Pixel leftPixel = null;
+    Pixel rightPixel = null;
+    int count = 0;
+    Pixel[][] pixels = this.getPixels2D();
+    
+    // loop through the rows
+    for (int row = 232; row < 325; row++)
+    {
+      // loop from 13 to just before the mirror point
+      for (int col = 236; col < mirrorPoint; col++)
+      {
+        
+        leftPixel = pixels[row][col];      
+        rightPixel = pixels[row+15][col + (mirrorPoint-236)];
+        rightPixel.setColor(leftPixel.getColor());
+        // leftPixel.setBlue(255);
+        // rightPixel.setRed(255);
+      }
+    }
+  }
+  
   /** Mirror just the snowman arms. */
   public void mirrorArms()
   {
