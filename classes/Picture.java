@@ -147,9 +147,15 @@ public class Picture extends SimplePicture
 
     for (Pixel[] rowArray: pixels) {
       for (Pixel pixelObj: rowArray) {
+
+        if (pixelObj.getRed() < 24 && 
+            pixelObj.getGreen() > 150 &&
+            pixelObj.getBlue() > 150) 
+            pixelObj.setRed(pixelObj.getRed() + 50);
         pixelObj.setBlue(pixelObj.getBlue() -70);
         pixelObj.setRed(pixelObj.getRed() +60);
         pixelObj.setGreen(pixelObj.getGreen() -30);
+
       }
     }
   }
